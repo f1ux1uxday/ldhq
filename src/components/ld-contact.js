@@ -4,19 +4,33 @@ class Contact extends Component {
   contactToggle() {
     if (this.props.contact === 'off') {
       this.props.changeContact('on')
-      console.log(this.props.contact)
-    } else {
+    }
+    if (this.props.contact == 'on') {
       this.props.changeContact('off')
-      console.log(this.props.contact)
+    }
+  }
+
+  stateCheckContact() {
+    if (this.props.contact === 'off') {
+      return (
+        <h4 id='contact-text'>
+          CONTACT
+        </h4>
+      )
+    }
+    if (this.props.contact === 'on') {
+      return (
+        <h4 id='contact-text'>
+          LUCASADAYTON@GMAIL.COM
+        </h4>
+      )
     }
   }
 
   render() {
     return (
       <div className='contact' onClick={this.contactToggle.bind(this)}>
-        <h4 id='contact-text'>
-          CONTACT
-        </h4>
+        {this.stateCheckContact()}
       </div>
     )
   }
