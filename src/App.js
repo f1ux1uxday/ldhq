@@ -17,6 +17,7 @@ class App extends Component {
     }
     this.changeContact = this.changeContact.bind(this)
     this.changeWork = this.changeWork.bind(this)
+    this.changeBio = this.changeBio.bind(this)
   }
 
   changeWork(toggle) {
@@ -28,6 +29,12 @@ class App extends Component {
   changeContact(toggle) {
     this.setState({
       contact: toggle,
+    })
+  }
+
+  changeBio(toggle) {
+    this.setState({
+      bio: toggle,
     })
   }
 
@@ -46,7 +53,10 @@ class App extends Component {
           changeContact={this.changeContact}
         />
 
-        <Bio />
+        <Bio
+          bio={this.state.bio}
+          changeBio={this.changeBio}
+        />
 
         <Footer />
       </div>

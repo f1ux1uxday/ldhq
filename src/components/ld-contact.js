@@ -5,7 +5,7 @@ class Contact extends Component {
     if (this.props.contact === 'off') {
       this.props.changeContact('on')
     }
-    if (this.props.contact == 'on') {
+    if (this.props.contact === 'on') {
       this.props.changeContact('off')
     }
   }
@@ -13,14 +13,14 @@ class Contact extends Component {
   stateCheckContact() {
     if (this.props.contact === 'off') {
       return (
-        <h4 id='contact-text'>
+        <h4 id='contact-off'>
           CONTACT
         </h4>
       )
     }
     if (this.props.contact === 'on') {
       return (
-        <h4 id='contact-text'>
+        <h4 id='contact-on'>
           LUCASADAYTON@GMAIL.COM
         </h4>
       )
