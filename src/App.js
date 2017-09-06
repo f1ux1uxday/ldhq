@@ -1,0 +1,57 @@
+import React, { Component } from 'react';
+
+import Blog from './components/ld-blog'
+import Work from './components/ld-work'
+import Contact from './components/ld-contact'
+import Bio from './components/ld-bio'
+import Footer from './components/ld-footer'
+import './App.css';
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      work: 'off',
+      contact: 'off',
+      bio: 'a',
+    }
+    this.changeContact = this.changeContact.bind(this)
+    this.changeWork = this.changeWork.bind(this)
+  }
+
+  changeWork(toggle) {
+    this.setState({
+      work: toggle,
+    })
+  }
+
+  changeContact(toggle) {
+    this.setState({
+      contact: toggle,
+    })
+  }
+
+  render() {
+    return (
+      <div className='App'>
+        <Blog />
+
+        <Work
+          work={this.state.work}
+          changeWork={this.changeWork}
+        />
+
+        <Contact
+          contact={this.state.contact}
+          changeContact={this.changeContact}
+        />
+
+        <Bio />
+
+        <Footer />
+      </div>
+    );
+  }
+}
+
+export default App;
