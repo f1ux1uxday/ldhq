@@ -21,7 +21,7 @@ class Contact extends Component {
     if (this.props.contact === 'on') {
       return (
         <h4 id='contact-on'>
-          LUCASADAYTON@GMAIL.COM
+          LUCASADAYTON[at]GMAIL.COM
         </h4>
       )
     }
