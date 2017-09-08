@@ -16,7 +16,7 @@ class Work extends Component {
     return (
       <div className='work' onClick={this.workToggle.bind(this)}>
         <h4 id='work-text'>
-          PORTFOLIO
+          PROJECTS
         </h4>
       </div>
     )

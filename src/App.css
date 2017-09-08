@@ -11,27 +11,35 @@ body {
   text-align: center;
 }
 
-.blog {
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0%;
   width: 100%;
-  font-size: 2.25rem;
   height: 20%;
-  background-color: #EEE;
-  color: #444;
+  background-color: #333;
+  color: #EEE;
 }
 
-.work{
+.bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 20%;
   width: 100%;
-  font-size: 2.25rem;
   height: 20%;
-  background-color: #BBB;
-  color: #444;
+  font-size: 1rem;
+  background-color: #444;
+  color: #BBB;
 }
 
-.contact {
+.work{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 40%;
   width: 100%;
@@ -41,33 +49,38 @@ body {
   color: #444;
 }
 
-#contact-on {
+.blog {
   display: flex;
   justify-content: center;
-  font-size: 1.25rem;
+  align-items: center;
+  position: fixed;
+  top: 80%;
+  width: 100%;
+  font-size: 2.25rem;
+  height: 20%;
+  background-color: #CCC;
+  color: #222;
 }
-
-.bio {
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 60%;
   width: 100%;
+  font-size: 2.25rem;
   height: 20%;
-  font-size: 1rem;
-  background-color: #444;
-  color: white;
+  background-color: #AAA;
+  color: #333;
 }
 
-.footer {
-  position: fixed;
-  top: 80%;
-  width: 100%;
-  height: 20%;
-  background-color: #222;
-  color: white;
+#contact-on {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
 }
+
+
 
 #name {
   text-align: center;

@@ -4,7 +4,7 @@ import Blog from './components/ld-blog'
 import Work from './components/ld-work'
 import Contact from './components/ld-contact'
 import Bio from './components/ld-bio'
-import Footer from './components/ld-footer'
+import Header from './components/ld-header'
 import './App.css';
 
 class App extends Component {
@@ -41,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Blog />
+        <Header />
 
         <Work
           work={this.state.work}
@@ -58,7 +58,7 @@ class App extends Component {
           changeBio={this.changeBio}
         />
 
-        <Footer />
+        <Blog />
       </div>
     );
   }

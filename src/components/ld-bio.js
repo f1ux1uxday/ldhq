@@ -26,7 +26,7 @@ class Bio extends Component {
       return (
         <h4 id='bio-text'>
           also a Linux enthusiast, multi-instrumentalist and sound designer.
-          a self-motivated individual and helpful teammate. a provider of
+          a self-motivated individual and useful teammate. a provider of
           comic relief who knows timing is everything.
         </h4>
       )
