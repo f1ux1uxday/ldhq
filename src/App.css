@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: 20%;
   background-color: #333;
-  color: #EEE;
+  color: #CCC;
 }
 
 .bio {
@@ -28,12 +28,13 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
+  text-align: center;
   top: 20%;
   width: 100%;
   height: 20%;
   font-size: 1rem;
   background-color: #444;
-  color: #BBB;
+  color: #AAA;
 }
 
 .work{
@@ -46,7 +47,7 @@ body {
   font-size: 2.25rem;
   height: 20%;
   background-color: #777;
-  color: #444;
+  color: #555;
 }
 
 .blog {
@@ -59,8 +60,9 @@ body {
   font-size: 2.25rem;
   height: 20%;
   background-color: #CCC;
-  color: #222;
+  color: #333;
 }
+
 .contact {
   display: flex;
   justify-content: center;
@@ -71,16 +73,26 @@ body {
   font-size: 2.25rem;
   height: 20%;
   background-color: #AAA;
-  color: #333;
+  color: #444;
 }
 
-#contact-on {
+.contact-items {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+#contact-mail {
+  margin-top: 2%;
   font-size: 1.25rem;
 }
 
+#logos {
+  flex-direction: row;
+}
 
+.icon {
+  height: 20px;
+}
 
 #name {
   text-align: center;

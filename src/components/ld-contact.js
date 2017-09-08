@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+import gitHubLogo from '../assets/GitHub_Logo.png'
+import linkedInLogo from '../assets/icons8-LinkedIn-48.png'
+import replitLogo from '../assets/repl-logo-small.png'
+
 class Contact extends Component {
   contactToggle() {
     if (this.props.contact === 'off') {
@@ -20,9 +24,16 @@ class Contact extends Component {
     }
     if (this.props.contact === 'on') {
       return (
-        <h4 id='contact-on'>
-          LUCASADAYTON[at]GMAIL.COM
-        </h4>
+        <div className='contact-items'>
+          <h4 id='contact-mail'>
+            LUCASADAYTON[at]GMAIL.COM
+          </h4>
+          <div id='logos'>
+            <img src={gitHubLogo} className='icon' id='gh-icon' alt='n'></img>
+            <img src={linkedInLogo} className='icon' id='li-icon' alt='n'></img>
+            <img src={replitLogo} className='icon' id='li-icon' alt='n'></img>
+          </div>
+        </div>
       )
     }
   }
