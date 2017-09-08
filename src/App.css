@@ -5,6 +5,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .App {
@@ -84,6 +85,7 @@ body {
 #contact-mail {
   margin-top: 2%;
   font-size: 1.25rem;
+  color: #555;
 }
 
 #logos {
