@@ -17,7 +17,7 @@ class Contact extends Component {
   stateCheckContact() {
     if (this.props.contact === 'off') {
       return (
-        <h4 id='contact-off'>
+        <h4 id='contact-off'  onClick={this.contactToggle.bind(this)}>
           CONTACT
         </h4>
       )
@@ -29,9 +29,18 @@ class Contact extends Component {
             LUCASADAYTON[at]GMAIL.COM
           </h4>
           <div id='logos'>
-            <img src={gitHubLogo} className='icon' id='gh-icon' alt='n'></img>
-            <img src={linkedInLogo} className='icon' id='li-icon' alt='n'></img>
-            <img src={replitLogo} className='icon' id='li-icon' alt='n'></img>
+            <a href='https://github.com/f1ux1uxday' target='blank'>
+              <img src={gitHubLogo} className='icon' id='gh-icon' alt='n'>
+              </img>
+            </a>
+            <a href='https://www.linkedin.com/in/lucas-dayton-911109a2/' target='blank'>
+              <img src={linkedInLogo} className='icon' id='li-icon' alt='n'>
+              </img>
+            </a>
+            <a href='https://repl.it/@fluxpatron' target='blank'>
+              <img src={replitLogo} className='icon' id='li-icon' alt='n'>
+              </img>
+            </a>
           </div>
         </div>
       )
@@ -40,7 +49,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className='contact' onClick={this.contactToggle.bind(this)}>
+      <div className='contact'>
         {this.stateCheckContact()}
       </div>
     )
