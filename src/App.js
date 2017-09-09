@@ -18,6 +18,7 @@ class App extends Component {
     this.changeContact = this.changeContact.bind(this)
     this.changeWork = this.changeWork.bind(this)
     this.changeBio = this.changeBio.bind(this)
+    this.getInitialState = this.getInitialState.bind(this)
   }
 
   changeWork(toggle) {
@@ -38,10 +39,20 @@ class App extends Component {
     })
   }
 
+  getInitialState() {
+    this.setState({
+      work: 'off',
+      contact: 'off',
+      bio: 'a',
+    })
+  }
+
   render() {
     return (
       <div className='App container'>
-        <Header />
+        <Header
+          getInitialState={this.getInitialState}
+        />
 
         <Work
           work={this.state.work}
