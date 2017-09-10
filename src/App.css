@@ -10,6 +10,7 @@ body {
 
 .App {
   text-align: center;
+  user-select: none;
 }
 
 .header {
@@ -100,7 +101,6 @@ body {
 .icon {
   height: 20px;
 }
-
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

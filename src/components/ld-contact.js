@@ -26,7 +26,7 @@ class Contact extends Component {
       return (
         <div className='contact-items'>
           <h4 id='contact-mail'>
-            LUCASADAYTON[at]GMAIL.COM
+            self[at]lucasdayton.com
           </h4>
           <div id='logos'>
             <a href='https://github.com/f1ux1uxday' target='blank'>
