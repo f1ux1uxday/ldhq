@@ -15,41 +15,48 @@ class Contact extends Component {
   }
 
   stateCheckContact() {
+    if (this.props.blog !== 'off') {
+      return null
+    }
     if (this.props.contact === 'off') {
       return (
-        <h4 id='contact-off'  onClick={this.contactToggle.bind(this)}>
-          CONTACT
-        </h4>
+        <div className='contact'>
+          <h4 id='contact-off'  onClick={this.contactToggle.bind(this)}>
+            CONTACT
+          </h4>
+        </div>
       )
     }
     if (this.props.contact === 'on') {
       return (
-        <div className='contact-items'>
-          <h4 id='contact-mail'>
-            self[at]lucasdayton.com
-          </h4>
-          <div id='logos'>
-            <a href='https://github.com/f1ux1uxday' target='blank'>
-              <img src={gitHubLogo} className='icon' id='gh-icon' alt='n'>
-              </img>
-            </a>
-            <a href='https://www.linkedin.com/in/lucas-dayton-911109a2/' target='blank'>
-              <img src={linkedInLogo} className='icon' id='li-icon' alt='n'>
-              </img>
-            </a>
-            <a href='https://repl.it/@fluxpatron' target='blank'>
-              <img src={replitLogo} className='icon' id='li-icon' alt='n'>
-              </img>
-            </a>
+        <div className='contact'>
+          <div className='contact-items'>
+            <h4 id='contact-mail'>
+              self[at]lucasdayton.com
+            </h4>
+            <div id='logos'>
+              <a href='https://github.com/f1ux1uxday' target='blank'>
+                <img src={gitHubLogo} className='icon' id='gh-icon' alt='n'>
+                </img>
+              </a>
+              <a href='https://www.linkedin.com/in/lucas-dayton-911109a2/' target='blank'>
+                <img src={linkedInLogo} className='icon' id='li-icon' alt='n'>
+                </img>
+              </a>
+              <a href='https://repl.it/@fluxpatron' target='blank'>
+                <img src={replitLogo} className='icon' id='li-icon' alt='n'>
+                </img>
+              </a>
+            </div>
           </div>
-        </div>
+          </div>
       )
     }
   }
 
   render() {
     return (
-      <div className='contact'>
+      <div>
         {this.stateCheckContact()}
       </div>
     )

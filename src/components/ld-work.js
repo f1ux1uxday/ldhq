@@ -12,12 +12,34 @@ class Work extends Component {
     }
   }
 
+  stateCheckWork() {
+    if (this.props.blog !== 'off') {
+      return null
+    }
+    if (this.props.work === 'off') {
+      return (
+        <div className='work' onClick={this.workToggle.bind(this)}>
+          <h4 id='work-text'>
+            PROJECTS
+          </h4>
+        </div>
+      )
+    }
+    if (this.props.work === 'on') {
+      return (
+        <div className='work' onClick={this.workToggle.bind(this)}>
+          <h4 id='work-text'>
+            under construction
+          </h4>
+        </div>
+      )
+    }
+  }
+
   render() {
     return (
-      <div className='work' onClick={this.workToggle.bind(this)}>
-        <h4 id='work-text'>
-          PROJECTS
-        </h4>
+      <div>
+        {this.stateCheckWork()}
       </div>
     )
   }

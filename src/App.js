@@ -13,12 +13,15 @@ class App extends Component {
     this.state = {
       work: 'off',
       contact: 'off',
+      blog: 'off',
       bio: 'a',
     }
     this.changeContact = this.changeContact.bind(this)
     this.changeWork = this.changeWork.bind(this)
+    this.changeToBlogIndex = this.changeToBlogIndex.bind(this)
     this.changeBio = this.changeBio.bind(this)
     this.getInitialState = this.getInitialState.bind(this)
+    this.selectBlog = this.selectBlog.bind(this)
   }
 
   changeWork(toggle) {
@@ -33,6 +36,12 @@ class App extends Component {
     })
   }
 
+  changeToBlogIndex() {
+    this.setState({
+      blog: 'index',
+    })
+  }
+
   changeBio(toggle) {
     this.setState({
       bio: toggle,
@@ -43,7 +52,14 @@ class App extends Component {
     this.setState({
       work: 'off',
       contact: 'off',
+      blog: 'off',
       bio: 'a',
+    })
+  }
+
+  selectBlog(blog) {
+    this.setState({
+      blog: blog,
     })
   }
 
@@ -55,21 +71,27 @@ class App extends Component {
         />
 
         <Work
+          blog={this.state.blog}
           work={this.state.work}
           changeWork={this.changeWork}
         />
 
         <Contact
+          blog={this.state.blog}
           contact={this.state.contact}
           changeContact={this.changeContact}
         />
 
         <Bio
           bio={this.state.bio}
+          blog={this.state.blog}
           changeBio={this.changeBio}
         />
 
-        <Blog />
+        <Blog
+          blog={this.state.blog}
+          changeToBlogIndex={this.changeToBlogIndex}
+          selectBlog={this.selectBlog}/>
       </div>
     );
   }
