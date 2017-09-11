@@ -39,7 +39,8 @@ class Contact extends Component {
                 <img src={gitHubLogo} className='icon' id='gh-icon' alt='n'>
                 </img>
               </a>
-              <a href='https://www.linkedin.com/in/lucas-dayton-911109a2/' target='blank'>
+              <a href='https://www.linkedin.com/in/lucas-dayton-911109a2/'
+                target='blank'>
                 <img src={linkedInLogo} className='icon' id='li-icon' alt='n'>
                 </img>
               </a>
