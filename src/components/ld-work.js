@@ -8,9 +8,6 @@ class Work extends Component {
     if (this.props.work === 'off') {
       this.props.changeWork('on')
       console.log(this.props.work)
-    } else {
-      this.props.changeWork('off')
-      console.log(this.props.work)
     }
   }
 
