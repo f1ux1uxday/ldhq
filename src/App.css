@@ -78,7 +78,7 @@ body {
   align-items: center;
   position: fixed;
   top: 35%;
-  width: 90%;
+  width: 75%;
   font-size: 2.25rem;
   height: 75%;
   background-color: #777;
@@ -104,6 +104,10 @@ body {
   filter: grayscale(100%);
   max-width: 100%;
   height: auto;
+}
+
+.thumbnail:hover {
+  filter: grayscale(70%);
 }
 
 .blog-head {
