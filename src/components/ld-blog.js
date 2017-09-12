@@ -11,7 +11,7 @@ class Blog extends Component {
   }
 
   stateCheckBlog() {
-    if (this.props.blog === 'off') {
+    if (this.props.blog === 'off' && this.props.work === 'off') {
       return (
         <div className='blog-head' onClick={this.blogToggle.bind(this)}>
           <h4 id='blog-head-text'>

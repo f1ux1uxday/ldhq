@@ -80,18 +80,22 @@ class App extends Component {
           blog={this.state.blog}
           contact={this.state.contact}
           changeContact={this.changeContact}
+          work={this.state.work}
         />
 
         <Bio
           bio={this.state.bio}
           blog={this.state.blog}
           changeBio={this.changeBio}
+          work={this.state.work}
         />
 
         <Blog
           blog={this.state.blog}
           changeToBlogIndex={this.changeToBlogIndex}
-          selectBlog={this.selectBlog}/>
+          selectBlog={this.selectBlog}
+          work={this.state.work}
+        />
       </div>
     );
   }

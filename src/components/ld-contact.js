@@ -15,7 +15,7 @@ class Contact extends Component {
   }
 
   stateCheckContact() {
-    if (this.props.blog !== 'off') {
+    if (this.props.blog !== 'off' || this.props.work !== 'off') {
       return null
     }
     if (this.props.contact === 'off') {

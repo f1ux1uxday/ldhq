@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import WorkDisplay from './ld-work-display'
+
 class Work extends Component {
 
   workToggle() {
@@ -27,10 +29,11 @@ class Work extends Component {
     }
     if (this.props.work === 'on') {
       return (
-        <div className='work' onClick={this.workToggle.bind(this)}>
-          <h4 id='work-text'>
-            under construction
+        <div className='work-view' onClick={this.workToggle.bind(this)}>
+          <h4 id='work-view-text'>
+            PROJECTS
           </h4>
+          <WorkDisplay />
         </div>
       )
     }
