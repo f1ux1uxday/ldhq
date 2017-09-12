@@ -101,13 +101,13 @@ body {
 /*switch max-width and height values when we use portrait view*/
 .thumbnail {
   display: flex;
-  filter: grayscale(100%);
+  filter: grayscale(100%) opacity(75%);
   max-width: 100%;
   height: auto;
 }
 
 .thumbnail:hover {
-  filter: grayscale(70%);
+  filter: grayscale(100%) opacity(100%);
 }
 
 .blog-head {
