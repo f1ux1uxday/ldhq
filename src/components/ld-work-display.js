@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import ThumbCal from '../assets/calcul8.png'
 import ThumbGil from '../assets/ganesh.png'
 import ThumbHyp from '../assets/hypno-timer.png'
 import ThumbTwi from '../assets/twitch.png'
@@ -22,7 +23,9 @@ class WorkDisplay extends Component {
             </a>
           </div>
           <div className='row-item'>
-            <img className='thumbnail' src={ThumbHyp} alt=''/>
+            <a href='http://gilganesh.com/ACE/calc.html' target='blank'>
+              <img className='thumbnail' src={ThumbCal} alt=''/>
+            </a>
           </div>
         </div>
         <div className='second row'>
