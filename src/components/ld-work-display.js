@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 
+import ThumbGil from '../assets/ganesh.png'
 import ThumbHyp from '../assets/hypno-timer.png'
+import ThumbTwi from '../assets/twitch.png'
 import ThumbWea from '../assets/weather.png'
+import ThumbWik from '../assets/wikisearch.png'
 
 class WorkDisplay extends Component {
   render() {
@@ -9,10 +12,14 @@ class WorkDisplay extends Component {
       <div className='work-display'>
         <div className='first row'>
           <div className='row-item'>
-            <img className='thumbnail' src={ThumbHyp} alt=''/>
+            <a href='http://gilganesh.com' target='blank'>
+              <img className='thumbnail' src={ThumbGil} alt=''/>
+            </a>
           </div>
           <div className='row-item'>
-            <img className='thumbnail' src={ThumbHyp} alt=''/>
+            <a href='http://hypno-timer.herokuapp.com' target='blank'>
+              <img className='thumbnail' src={ThumbHyp} alt=''/>
+            </a>
           </div>
           <div className='row-item'>
             <img className='thumbnail' src={ThumbHyp} alt=''/>
@@ -20,8 +27,8 @@ class WorkDisplay extends Component {
         </div>
         <div className='second row'>
           <div className='row-item'>
-            <a href='http://hypno-timer.herokuapp.com' target='blank'>
-              <img className='thumbnail' src={ThumbHyp} alt=''/>
+            <a href='http://zenradsyndicate.com/wikisearch.html' target='blank'>
+              <img className='thumbnail' src={ThumbWik} alt=''/>
             </a>
           </div>
           <div className='row-item'>
@@ -30,7 +37,9 @@ class WorkDisplay extends Component {
             </a>
           </div>
           <div className='row-item'>
-            <img className='thumbnail' src={ThumbHyp} alt=''/>
+            <a href='http://gilganesh.com/ACE/twitch.html' target='blank'>
+              <img className='thumbnail' src={ThumbTwi} alt=''/>
+            </a>
           </div>
         </div>
       </div>
