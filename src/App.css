@@ -115,12 +115,12 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 80%;
+  top: 60%;
   width: 100%;
   font-size: 2.25rem;
   height: 20%;
-  background-color: #CCC;
-  color: #333;
+  background-color: #AAA;
+  color: #444;
 }
 
 .blog-index {
@@ -133,8 +133,8 @@ body {
     width: 100%;
     font-size: 1rem;
     height: 80%;
-    background-color: #CCC;
-    color: #333;
+    background-color: #AAA;
+    color: #444;
 }
 
 #blog-head-text {
@@ -154,8 +154,8 @@ li {
   width: 100%;
   font-size: 1rem;
   height: 80%;
-  background-color: #CCC;
-  color: #333;
+  background-color: #AAA;
+  color: #444;
 }
 
 .blog-entry {
@@ -166,8 +166,8 @@ li {
   overflow: auto;
   width: 100%;
   font-size: .66rem;
-  background-color: #CCC;
-  color: #333;
+  background-color: #AAA;
+  color: #444;
 }
 
 .contact {
@@ -175,12 +175,12 @@ li {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 60%;
+  top: 80%;
   width: 100%;
   font-size: 2.25rem;
   height: 20%;
-  background-color: #AAA;
-  color: #444;
+  background-color: #CCC;
+  color: #333;
 }
 
 .contact-items {
