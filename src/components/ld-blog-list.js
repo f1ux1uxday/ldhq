@@ -17,7 +17,7 @@ class BlogList extends Component {
             blog title number two: alfalfa v. sipowitz
           </li>
           <li>
-            blog title three and a half: shakespeare's nurse
+            blog title three and a half: shakespeare the nurse
           </li>
           <li>
             blog title numero four: FOSS saved my life... TWICE
