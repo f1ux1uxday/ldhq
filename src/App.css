@@ -213,12 +213,76 @@ li {
   height: 20px;
 }
 
+#li-icon {
+  padding-left: 9%;
+}
+
 @media screen
 and (min-width : 320px)
 and (max-width : 568px)
 and (orientation : landscape) {
   #work-view-text {
     font-size: 1rem;
+  }
+
+  .contact-items {
+    align-items: center;
+  }
+
+  #contact-mail {
+    padding-top: 20%;
+    font-size: .75rem;
+  }
+
+  .icon {
+    height: 15px;
+    padding-bottom: 25%;
+  }
+
+}
+
+@media screen
+and (min-width : 375px)
+and (max-width : 667px)
+and (orientation : landscape) {
+  #contact-mail {
+    padding-top: 25%;
+    font-size: .75rem;
+  }
+
+  .icon {
+    height: 15px;
+    padding-bottom: 25%;
+  }
+}
+
+@media screen
+and (min-width : 412px)
+and (max-width : 732px)
+and (orientation : landscape) {
+  #contact-mail {
+    padding-top: 25%;
+    font-size: .75rem;
+  }
+
+  .icon {
+    height: 15px;
+    padding-bottom: 25%;
+  }
+}
+
+@media screen
+and (min-width : 414px)
+and (max-width : 736px)
+and (orientation : landscape) {
+  #contact-mail {
+    padding-top: 25%;
+    font-size: .85rem;
+  }
+
+  .icon {
+    height: 20px;
+    padding-bottom: 25%;
   }
 }
 
@@ -233,4 +297,6 @@ and (orientation: portrait) {
   .row-item {
     padding: 2%;
   }
+
+
 }
