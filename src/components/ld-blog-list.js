@@ -11,19 +11,19 @@ class BlogList extends Component {
       <div className='blog-list'>
         <ul id='blog-list'>
           <li id='1' onClick={this.blogSelector.bind(this, '1')}>
-            blog title numero uno: the quickening
+            uno: the quickening
           </li>
           <li>
-            blog title number two: alfalfa v. sipowitz
+            two: alfalfa v. sipowitz
           </li>
           <li>
-            blog title three and a half: shakespeare the nurse
+            three: shakespeare the nurse
           </li>
           <li>
-            blog title numero four: FOSS saved my life... TWICE
+            four: FOSS saved my life... TWICE
           </li>
           <li>
-            blog title number five: top ten ways to spell howdy
+            five: top ten ways to spell howdy
           </li>
         </ul>
       </div>

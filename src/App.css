@@ -77,8 +77,10 @@ body {
 
 .proj-desc {
   width: 100%;
-  margin-top: -5%;
-  font-size: .75rem;
+  margin-top: -2.5%;
+  margin-bottom: -1%;
+  font-size: .88rem;
+  color: #333;
 }
 
 .work-display {
@@ -88,7 +90,7 @@ body {
   align-items: center;
   /*position: fixed;*/
   position: sticky;
-  top: 38%;
+  top: 33%;
   width: 75%;
   font-size: 2.25rem;
   height: 75%;
@@ -101,12 +103,13 @@ body {
   flex-direction: row;
   width: 100%;
   height: 33%;
-  margin-bottom: 5%;
+  margin: auto;
 }
 
 .row-item {
   background-color: #777;
   width: 33%;
+  margin: auto;
 }
 
 /*switch max-width and height values when we use portrait view*/
@@ -152,7 +155,15 @@ body {
   font-size: 2.25rem;
 }
 
+.blog-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
 li {
+  margin-left: -5%;
   text-align: left;
 }
 
@@ -169,6 +180,11 @@ li {
   color: #444;
 }
 
+.blog-title {
+  text-align: center;
+  font-size: 1rem;
+}
+
 .blog-entry {
   display: flex;
   flex-direction: column;
@@ -176,9 +192,15 @@ li {
   height: 80%;
   overflow: auto;
   width: 100%;
-  font-size: .66rem;
+  font-size: 1rem;
   background-color: #AAA;
   color: #444;
+}
+
+.blog-body {
+  text-align: left;
+  width: 80%;
+  margin: auto;
 }
 
 .contact {
@@ -213,6 +235,10 @@ li {
   height: 20px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #li-icon {
   padding-left: 9%;
 }
@@ -222,7 +248,33 @@ and (min-width : 320px)
 and (max-width : 568px)
 and (orientation : landscape) {
   #work-view-text {
+    margin-top: 2%;
     font-size: 1rem;
+  }
+
+  .proj-desc {
+    font-size: .66rem;
+  }
+
+  .work-display {
+    top: 27%
+  }
+
+  #blog-head-index {
+    font-size: 1.25rem;
+    margin-bottom: 0%;
+  }
+
+  .blog-index {
+    font-size: .75rem;
+  }
+
+  .blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: .75rem;
   }
 
   .contact-items {
@@ -245,6 +297,31 @@ and (orientation : landscape) {
 and (min-width : 375px)
 and (max-width : 667px)
 and (orientation : landscape) {
+  #work-view-text {
+    font-size: 1rem;
+  }
+
+  .proj-desc {
+    font-size: .66rem;
+  }
+
+  #blog-head-index {
+    font-size: 1.25rem;
+    margin-bottom: 0%;
+  }
+
+  .blog-index {
+    display: flex;
+    font-size: .75rem;
+  }
+
+  .blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
   #contact-mail {
     padding-top: 25%;
     font-size: .75rem;
@@ -260,6 +337,23 @@ and (orientation : landscape) {
 and (min-width : 412px)
 and (max-width : 732px)
 and (orientation : landscape) {
+  #work-view-text {
+    margin-top: 2%;
+    font-size: 1rem;
+  }
+
+  #blog-head-index {
+    font-size: 1.25rem;
+    margin-bottom: 0%;
+  }
+
+  .blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
   #contact-mail {
     padding-top: 25%;
     font-size: .75rem;
@@ -275,6 +369,21 @@ and (orientation : landscape) {
 and (min-width : 414px)
 and (max-width : 736px)
 and (orientation : landscape) {
+  #work-view-text {
+    margin-top: 2%;
+    font-size: 1rem;
+  }
+
+  .work-display {
+    top: 33%;
+  }
+
+  #blog-head-index {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 0%;
+  }
+
   #contact-mail {
     padding-top: 25%;
     font-size: .85rem;
@@ -288,8 +397,12 @@ and (orientation : landscape) {
 
 @media screen
 and (orientation: portrait) {
+  .proj-desc {
+    font-size: .66rem;
+    margin-top: -7%;
+  }
   .work-display {
-    top: 35%;
+    top: 34%;
   }
 
   .row {
@@ -298,9 +411,91 @@ and (orientation: portrait) {
     height: 46%;
   }
 
+  .second {
+    margin-top: -3%;
+  }
+
   .row-item {
     padding: 2%;
   }
 
+  .blog-list {
+    font-size: .75rem;
+  }
+}
 
+@media screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+  .row {
+    flex-direction: row;
+  }
+
+  .proj-desc {
+    font-size: 1.11rem;
+  }
+
+  .work-display {
+    top: 33%;
+    width: 95%;
+    font-size: 2.25rem;
+    height: 75%;
+    background-color: #777;
+    color: #555;
+  }
+
+  #blog-head-index {
+    font-size: 2rem;
+  }
+
+  .blog-list {
+    font-size: 1.5rem;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+
+  .blog-body {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen
+and (min-width : 1024px)
+and (max-width : 1366px)
+and (orientation : portrait) {
+  .row {
+    flex-direction: row;
+  }
+
+  .proj-desc {
+    font-size: 1.33rem;
+  }
+
+  .work-display {
+    top: 33%;
+    width: 95%;
+    font-size: 2.25rem;
+    height: 75%;
+    background-color: #777;
+    color: #555;
+  }
+
+  #blog-head-index {
+    font-size: 2rem;
+  }
+
+  .blog-list {
+    font-size: 1.5rem;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+
+  .blog-body {
+    font-size: 1.5rem;
+  }
 }

@@ -23,7 +23,7 @@ class Blog extends Component {
     if (this.props.blog === 'index') {
       return (
         <div className='blog-index'>
-          <h4 id='blog-head-text'>
+          <h4 id='blog-head-index'>
             BLOG
           </h4>
           <BlogList
