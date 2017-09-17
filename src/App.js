@@ -12,6 +12,7 @@ class App extends Component {
     super(props)
     this.state = {
       work: 'off',
+      descript: '0',
       contact: 'off',
       blog: 'off',
       bio: 'a',
@@ -20,6 +21,7 @@ class App extends Component {
     this.changeWork = this.changeWork.bind(this)
     this.changeToBlogIndex = this.changeToBlogIndex.bind(this)
     this.changeBio = this.changeBio.bind(this)
+    this.getDescription = this.getDescription.bind(this)
     this.getInitialState = this.getInitialState.bind(this)
     this.selectBlog = this.selectBlog.bind(this)
   }
@@ -57,6 +59,12 @@ class App extends Component {
     })
   }
 
+  getDescription(projectNum) {
+    this.setState({
+      descript: projectNum,
+    })
+  }
+
   selectBlog(blog) {
     this.setState({
       blog: blog,
@@ -72,8 +80,10 @@ class App extends Component {
 
         <Work
           blog={this.state.blog}
-          work={this.state.work}
           changeWork={this.changeWork}
+          descript={this.state.descript}
+          getDescription={this.getDescription}
+          work={this.state.work}
         />
 
         <Contact

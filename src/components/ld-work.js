@@ -30,7 +30,10 @@ class Work extends Component {
           <h4 id='work-view-text'>
             PROJECTS
           </h4>
-          <WorkDisplay />
+          <WorkDisplay
+            descript={this.props.descript}
+            getDescription={this.props.getDescription}
+          />
         </div>
       )
     }

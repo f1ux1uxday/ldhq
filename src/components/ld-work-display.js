@@ -8,38 +8,107 @@ import ThumbWea from '../assets/weather.png'
 import ThumbWik from '../assets/wikisearch.png'
 
 class WorkDisplay extends Component {
+  showDescription(num) {
+    this.props.getDescription(num)
+  }
+
+  describer() {
+    if (this.props.descript === '0') {
+      return (
+        <p className='proj-desc'>
+          a selection of recent works
+        </p>
+      )
+    }
+    if (this.props.descript === '1') {
+      return (
+        <p className='proj-desc'>
+          a website made for a local pop group. made with React and glowing CSS.
+        </p>
+      )
+    }
+    if (this.props.descript === '2') {
+      return (
+        <p className='proj-desc'>
+          a hypnotic timing device for pomodoro training or cooking pot roasts
+        </p>
+      )
+    }
+    if (this.props.descript === '3') {
+      return (
+        <p className='proj-desc'>
+          a tedium-breaking calculator designed to make simple operations fun again
+        </p>
+      )
+    }
+    if (this.props.descript === '4') {
+      return (
+        <p className='proj-desc'>
+          a fast and easy wikipedia searcher using AJAX to call data from the API
+        </p>
+      )
+    }
+    if (this.props.descript === '5') {
+      return (
+        <p className='proj-desc'>
+          a stylish way to check the local weather using data from the OpenWeatherMap API
+        </p>
+      )
+    }
+    if (this.props.descript === '6') {
+      return (
+        <p className='proj-desc'>
+          a proof-of-concept using the Twitch API to display a list of subscribed channels
+        </p>
+      )
+    }
+  }
+
   render() {
     return (
       <div className='work-display'>
+        {this.describer()}
         <div className='first row'>
-          <div className='row-item'>
+          <div className='row-item'
+              onMouseOver={this.showDescription.bind(this, '1')}
+              onMouseOut={this.showDescription.bind(this, '0')}>
             <a href='http://gilganesh.com' target='blank'>
               <img className='thumbnail' src={ThumbGil} alt=''/>
             </a>
           </div>
-          <div className='row-item'>
+          <div className='row-item'
+              onMouseOver={this.showDescription.bind(this, '2')}
+              onMouseOut={this.showDescription.bind(this, '0')}>
             <a href='http://hypno-timer.herokuapp.com' target='blank'>
               <img className='thumbnail' src={ThumbHyp} alt=''/>
             </a>
           </div>
-          <div className='row-item'>
+          <div className='row-item'
+              onMouseOver={this.showDescription.bind(this, '3')}
+              onMouseOut={this.showDescription.bind(this, '0')}>
             <a href='http://gilganesh.com/ACE/calc.html' target='blank'>
               <img className='thumbnail' src={ThumbCal} alt=''/>
             </a>
           </div>
         </div>
         <div className='second row'>
-          <div className='row-item'>
+          <div className='row-item'
+              onMouseOver={this.showDescription.bind(this, '4')}
+              onMouseOut={this.showDescription.bind(this, '0')}>
             <a href='http://zenradsyndicate.com/wikisearch.html' target='blank'>
               <img className='thumbnail' src={ThumbWik} alt=''/>
             </a>
           </div>
-          <div className='row-item'>
+          <div className='row-item'
+              onMouseOver={this.showDescription.bind(this, '5')}
+              onMouseOut={this.showDescription.bind(this, '0')}>
             <a href='http://gilganesh.com/ACE/weather.html' target='blank'>
               <img className='thumbnail' src={ThumbWea} alt=''/>
             </a>
           </div>
-          <div className='row-item'>
+          <div className='row-item'
+            onMouseOver={this.showDescription.bind(this, '6')}
+            onMouseOut={this.showDescription.bind(this, '0')}>
             <a href='http://gilganesh.com/ACE/twitch.html' target='blank'>
               <img className='thumbnail' src={ThumbTwi} alt=''/>
             </a>
