@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-import QuickeningBlog from './ld-quickening'
+import ReadThisBlog from './ld-readthisblog'
 
 // Keep: onClick={this.blogSelector('1')}
 class BlogDisplay extends Component {
   displaySelection() {
     if (this.props.blog === '1') {
       return (
-        <QuickeningBlog />
+        <ReadThisBlog />
       )
     }
     if (this.props.blog !== '1') {

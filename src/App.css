@@ -201,6 +201,7 @@ li {
   text-align: left;
   width: 80%;
   margin: auto;
+  margin-top: 0%;
 }
 
 .contact {
@@ -237,6 +238,10 @@ li {
 
 ul {
   list-style-type: none;
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 #li-icon {
