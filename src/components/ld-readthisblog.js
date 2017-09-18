@@ -46,7 +46,7 @@ class ReadThisBlog extends Component {
               Jefferson and I "would rather be exposed to the inconveniences
               attending too much liberty than those of attending too small a
               degree of it". In programmer's parlance, which set of bugs would
-              you rather have to patch> We all know how frustrating life can be
+              you rather have to patch? We all know how frustrating life can be
               without the necessary permissions.
           </p>
           <p> I know that with our powers combined, we can build the web of the
