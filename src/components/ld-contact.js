@@ -20,8 +20,8 @@ class Contact extends Component {
     }
     if (this.props.contact === 'off') {
       return (
-        <div className='contact'>
-          <h4 id='contact-off'  onClick={this.contactToggle.bind(this)}>
+        <div className='contact' onClick={this.contactToggle.bind(this)}>
+          <h4 id='contact-off'>
             CONTACT
           </h4>
         </div>
