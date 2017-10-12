@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-import Blog from './components/ld-blog'
-import Work from './components/ld-work'
-import Contact from './components/ld-contact'
-import Bio from './components/ld-bio'
-import Header from './components/ld-header'
-import './App.css';
+import Blog from '../components/ld-blog'
+import Work from '../components/ld-work'
+import Contact from '../components/ld-contact'
+import Bio from '../components/ld-bio'
+import Header from '../components/ld-header'
+import '../App.css';
 
-class App extends Component {
+class Home extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      work: 'off',
+      work: 'on',
       descript: '0',
       contact: 'off',
       blog: 'off',
@@ -26,6 +26,7 @@ class App extends Component {
     this.selectBlog = this.selectBlog.bind(this)
   }
 
+  /*
   changeWork(toggle) {
     this.setState({
       work: toggle,
@@ -49,7 +50,7 @@ class App extends Component {
       bio: toggle,
     })
   }
-
+  */
   getInitialState() {
     this.setState({
       work: 'off',
@@ -65,11 +66,13 @@ class App extends Component {
     })
   }
 
+  /*
   selectBlog(blog) {
     this.setState({
       blog: blog,
     })
   }
+  */
 
   render() {
     return (
@@ -111,4 +114,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
