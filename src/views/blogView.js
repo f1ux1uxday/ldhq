@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
-import Work from '../components/ld-work'
+
+import Blog from '../components/ld-blog'
 import Header from '../components/ld-header'
 import '../App.css';
 
-class ProjectView extends Component {
+class BlogView extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      work: 'on',
+      work: 'off',
       descript: '0',
       contact: 'off',
-      blog: 'off',
+      blog: 'index',
       bio: 'a',
     }
-    this.getDescription = this.getDescription.bind(this)
+
     this.getInitialState = this.getInitialState.bind(this)
+    this.selectBlog = this.selectBlog.bind(this)
   }
 
   getInitialState() {
@@ -26,9 +28,9 @@ class ProjectView extends Component {
     })
   }
 
-  getDescription(projectNum) {
+  selectBlog(blog) {
     this.setState({
-      descript: projectNum,
+      blog: blog,
     })
   }
 
@@ -39,17 +41,15 @@ class ProjectView extends Component {
           getInitialState={this.getInitialState}
         />
 
-        <Work
+        <Blog
           blog={this.state.blog}
-          changeWork={this.changeWork}
-          descript={this.state.descript}
-          getDescription={this.getDescription}
+          changeToBlogIndex={this.changeToBlogIndex}
+          selectBlog={this.selectBlog}
           work={this.state.work}
         />
-
       </div>
     );
   }
 }
 
-export default ProjectView;
+export default BlogView;

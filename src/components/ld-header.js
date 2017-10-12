@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Header extends Component {
   render() {
     return (
-        <div className='header' onClick={this.props.getInitialState}>
-          <h1 id='name' >LUCAS DAYTON</h1>
-        </div>
+        <Link to='/'>
+          <div className='header' onClick={this.props.getInitialState}>
+            <h1 id='name' >LUCAS DAYTON</h1>
+          </div>
+        </Link>
     )
   }
 }

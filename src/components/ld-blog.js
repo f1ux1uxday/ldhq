@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import BlogList from './ld-blog-list'
 import BlogDisplay from './ld-blog-display'
@@ -13,11 +14,13 @@ class Blog extends Component {
   stateCheckBlog() {
     if (this.props.blog === 'off' && this.props.work === 'off') {
       return (
-        <div className='blog-head' onClick={this.blogToggle.bind(this)}>
-          <h4 id='blog-head-text'>
-            BLOG
-          </h4>
-        </div>
+        <Link to='/blog'>
+          <div className='blog-head' onClick={this.blogToggle.bind(this)}>
+            <h4 id='blog-head-text'>
+              BLOG
+            </h4>
+          </div>
+        </Link>
       )
     }
     if (this.props.blog === 'index') {
