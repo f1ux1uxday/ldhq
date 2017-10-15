@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import ReadThisBlog from './ld-readthisblog'
+import ReadThisBlog from './blogs/ld-readthisblog'
+import EscapeDRMBlog from './blogs/ld-escapeblog'
 
 // Keep: onClick={this.blogSelector('1')}
 class BlogDisplay extends Component {
@@ -10,11 +11,9 @@ class BlogDisplay extends Component {
         <ReadThisBlog />
       )
     }
-    if (this.props.blog !== '1') {
+    if (this.props.blog === '2') {
       return (
-        <div>
-          WTF m8
-        </div>
+        <EscapeDRMBlog />
       )
     }
   }

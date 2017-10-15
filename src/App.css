@@ -427,6 +427,10 @@ and (orientation: portrait) {
   .blog-list {
     font-size: .75rem;
   }
+
+  .blog-body {
+    font-size: .66rem;
+  }
 }
 
 @media screen
@@ -463,7 +467,7 @@ and (orientation : portrait) {
   }
 
   .blog-body {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
