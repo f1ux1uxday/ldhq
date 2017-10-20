@@ -36,7 +36,7 @@ class Blog extends Component {
         </div>
       )
     }
-    if (this.props.blog === '1') {
+    if (this.props.blog === '1' || this.props.blog === '2') {
       return (
         <BlogDisplay
           blog={this.props.blog}
