@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import Blog from '../components/ld-blog'
 import Work from '../components/ld-work'
@@ -107,8 +107,8 @@ class HomeView extends Component {
           work={this.state.work}
         />
       </div>
-    );
+    )
   }
 }
 
-export default HomeView;
+export default HomeView
