@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Work from '../components/ld-work'
 import Header from '../components/ld-header'
-import '../App.css';
+import '../App.css'
 
 class ProjectView extends Component {
   constructor(props) {
@@ -48,8 +48,8 @@ class ProjectView extends Component {
         />
 
       </div>
-    );
+    )
   }
 }
 
-export default ProjectView;
+export default ProjectView
