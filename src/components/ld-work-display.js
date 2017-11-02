@@ -68,50 +68,52 @@ class WorkDisplay extends Component {
     return (
       <div className='work-display'>
         {this.describer()}
-        <div className='first row'>
-          <div className='row-item'
+        <div className='thumbnail-box'>
+          <div className='first row'>
+            <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '1')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-            <a href='http://gilganesh.com' target='blank'>
-              <img className='thumbnail' src={ThumbGil} alt=''/>
-            </a>
-          </div>
-          <div className='row-item'
+              <a href='http://gilganesh.com' target='blank'>
+                <img className='thumbnail' src={ThumbGil} alt=''/>
+              </a>
+            </div>
+            <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '2')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-            <a href='http://hypno-timer.herokuapp.com' target='blank'>
-              <img className='thumbnail' src={ThumbHyp} alt=''/>
-            </a>
-          </div>
-          <div className='row-item'
+              <a href='http://hypno-timer.herokuapp.com' target='blank'>
+                <img className='thumbnail' src={ThumbHyp} alt=''/>
+              </a>
+            </div>
+            <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '3')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-            <a href='http://gilganesh.com/ACE/calc.html' target='blank'>
-              <img className='thumbnail' src={ThumbCal} alt=''/>
-            </a>
+              <a href='http://gilganesh.com/ACE/calc.html' target='blank'>
+                <img className='thumbnail' src={ThumbCal} alt=''/>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className='second row'>
-          <div className='row-item'
+          <div className='second row'>
+            <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '4')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-            <a href='http://zenradsyndicate.com/wikisearch.html' target='blank'>
-              <img className='thumbnail' src={ThumbWik} alt=''/>
-            </a>
-          </div>
-          <div className='row-item'
+              <a href='http://zenradsyndicate.com/wikisearch.html' target='blank'>
+                <img className='thumbnail' src={ThumbWik} alt=''/>
+              </a>
+            </div>
+            <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '5')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-            <a href='http://gilganesh.com/ACE/weather.html' target='blank'>
-              <img className='thumbnail' src={ThumbWea} alt=''/>
-            </a>
-          </div>
-          <div className='row-item'
-            onMouseOver={this.showDescription.bind(this, '6')}
-            onMouseOut={this.showDescription.bind(this, '0')}>
-            <a href='http://gilganesh.com/ACE/twitch.html' target='blank'>
-              <img className='thumbnail' src={ThumbTwi} alt=''/>
-            </a>
+              <a href='http://gilganesh.com/ACE/weather.html' target='blank'>
+                <img className='thumbnail' src={ThumbWea} alt=''/>
+              </a>
+            </div>
+            <div className='row-item'
+              onMouseOver={this.showDescription.bind(this, '6')}
+              onMouseOut={this.showDescription.bind(this, '0')}>
+              <a href='http://gilganesh.com/ACE/twitch.html' target='blank'>
+                <img className='thumbnail' src={ThumbTwi} alt=''/>
+              </a>
+            </div>
           </div>
         </div>
       </div>
