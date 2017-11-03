@@ -512,7 +512,7 @@ and (orientation : portrait) {
   }
 
   #work-view-text {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .proj-desc {
@@ -547,5 +547,22 @@ and (orientation : portrait) {
 
   .blog-body {
     font-size: 1.5rem;
+  }
+}
+
+@media screen
+and (min-width: 1080px)
+and (orientation: portrait) {
+  .proj-desc {
+    margin-top: -3%;
+    font-size: 1.5rem;
+  }
+
+  .work-display {
+    top: 35%;
+  }
+
+  .thumbnail-box {
+    margin-top: 3%;
   }
 }
