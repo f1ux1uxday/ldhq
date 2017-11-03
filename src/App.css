@@ -553,6 +553,10 @@ and (orientation : portrait) {
 @media screen
 and (min-width: 1080px)
 and (orientation: portrait) {
+  #work-view-text {
+    font-size: 2.75rem;
+  }
+
   .proj-desc {
     margin-top: -3%;
     font-size: 1.5rem;
