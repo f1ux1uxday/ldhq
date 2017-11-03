@@ -511,6 +511,10 @@ and (orientation : portrait) {
     flex-direction: column;
   }
 
+  #work-view-text {
+    font-size: 3rem;
+  }
+
   .proj-desc {
     font-size: 1.33rem;
     margin-top: -5%;
