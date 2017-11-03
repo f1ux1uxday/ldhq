@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import ThumbCal from '../assets/calcul8.png'
 import ThumbGil from '../assets/ganesh.png'
 import ThumbHyp from '../assets/hypno-timer.png'
-import ThumbTwi from '../assets/twitch.png'
+import ThumbTic from '../assets/ttt.png'
 import ThumbWea from '../assets/weather.png'
 import ThumbWik from '../assets/wikisearch.png'
 
@@ -23,7 +23,7 @@ class WorkDisplay extends Component {
     if (this.props.descript === '1') {
       return (
         <p className='proj-desc'>
-          a website made for a local pop group. made with React and glowing CSS.
+          an extra spooky and highly-configurable 4x4 tic-tac-toe deathmatch
         </p>
       )
     }
@@ -37,7 +37,7 @@ class WorkDisplay extends Component {
     if (this.props.descript === '3') {
       return (
         <p className='proj-desc'>
-          a tedium-breaking calculator designed to make simple operations fun again
+          a luminous website made for a local pop group, made with react
         </p>
       )
     }
@@ -58,7 +58,7 @@ class WorkDisplay extends Component {
     if (this.props.descript === '6') {
       return (
         <p className='proj-desc'>
-          a proof-of-concept using the Twitch API to display a list of subscribed channels
+          a tedium-breaking calculator designed to make simple operations fun again
         </p>
       )
     }
@@ -73,8 +73,8 @@ class WorkDisplay extends Component {
             <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '1')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-              <a href='http://gilganesh.com' target='blank'>
-                <img className='thumbnail' src={ThumbGil} alt=''/>
+              <a href='http://tictactorment.herokuapp.com' target='blank'>
+                <img className='thumbnail' src={ThumbTic} alt=''/>
               </a>
             </div>
             <div className='row-item'
@@ -87,8 +87,8 @@ class WorkDisplay extends Component {
             <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '3')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-              <a href='http://gilganesh.com/ACE/calc.html' target='blank'>
-                <img className='thumbnail' src={ThumbCal} alt=''/>
+              <a href='http://gilganesh.com' target='blank'>
+                <img className='thumbnail' src={ThumbGil} alt=''/>
               </a>
             </div>
           </div>
@@ -110,8 +110,8 @@ class WorkDisplay extends Component {
             <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '6')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-              <a href='http://gilganesh.com/ACE/twitch.html' target='blank'>
-                <img className='thumbnail' src={ThumbTwi} alt=''/>
+              <a href='http://gilganesh.com/ACE/calc.html' target='blank'>
+                <img className='thumbnail' src={ThumbCal} alt=''/>
               </a>
             </div>
           </div>
