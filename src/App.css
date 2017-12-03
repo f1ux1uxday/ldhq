@@ -210,6 +210,10 @@ li {
   margin-top: 0%;
 }
 
+.blog-link {
+  color: #333;
+}
+
 .contact {
   display: flex;
   justify-content: center;

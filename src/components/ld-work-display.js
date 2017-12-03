@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import ThumbCal from '../assets/calcul8.png'
+import ThumbSim from '../assets/simon-joe.png'
 import ThumbGil from '../assets/ganesh.png'
 import ThumbHyp from '../assets/hypno-timer.png'
 import ThumbTic from '../assets/ttt.png'
@@ -23,21 +23,21 @@ class WorkDisplay extends Component {
     if (this.props.descript === '1') {
       return (
         <p className='proj-desc'>
-          an extra spooky and highly-configurable 4x4 tic-tac-toe deathmatch
+          a pattern-based memory test proctored by the mercurial Simon Joe
         </p>
       )
     }
     if (this.props.descript === '2') {
       return (
         <p className='proj-desc'>
-          a hypnotic timing device for pomodoro training or cooking pot roasts
+          an extra spooky and highly-configurable 4x4 tic-tac-toe deathmatch
         </p>
       )
     }
     if (this.props.descript === '3') {
       return (
         <p className='proj-desc'>
-          a luminous website made for a local pop group, made with react
+          a hypnotic timing device for pomodoro training or cooking pot roasts
         </p>
       )
     }
@@ -58,7 +58,7 @@ class WorkDisplay extends Component {
     if (this.props.descript === '6') {
       return (
         <p className='proj-desc'>
-          a tedium-breaking calculator designed to make simple operations fun again
+          a luminous website made for a local pop group, made with react
         </p>
       )
     }
@@ -73,22 +73,22 @@ class WorkDisplay extends Component {
             <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '1')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-              <a href='http://tictactorment.herokuapp.com' target='blank'>
-                <img className='thumbnail' src={ThumbTic} alt=''/>
+              <a href='https://simon-joe.herokuapp.com' target='blank'>
+                <img className='thumbnail' src={ThumbSim} alt=''/>
               </a>
             </div>
             <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '2')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-              <a href='http://hypno-timer.herokuapp.com' target='blank'>
-                <img className='thumbnail' src={ThumbHyp} alt=''/>
+              <a href='http://tictactorment.herokuapp.com' target='blank'>
+                <img className='thumbnail' src={ThumbTic} alt=''/>
               </a>
             </div>
             <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '3')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-              <a href='http://gilganesh.com' target='blank'>
-                <img className='thumbnail' src={ThumbGil} alt=''/>
+              <a href='http://hypno-timer.herokuapp.com' target='blank'>
+                <img className='thumbnail' src={ThumbHyp} alt=''/>
               </a>
             </div>
           </div>
@@ -110,8 +110,8 @@ class WorkDisplay extends Component {
             <div className='row-item'
               onMouseOver={this.showDescription.bind(this, '6')}
               onMouseOut={this.showDescription.bind(this, '0')}>
-              <a href='http://gilganesh.com/ACE/calc.html' target='blank'>
-                <img className='thumbnail' src={ThumbCal} alt=''/>
+              <a href='http://gilganesh.com' target='blank'>
+                <img className='thumbnail' src={ThumbGil} alt=''/>
               </a>
             </div>
           </div>
