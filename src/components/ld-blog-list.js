@@ -11,19 +11,13 @@ class BlogList extends Component {
       <div className='blog-list'>
         <ul id='blog-list'>
           <li id='2' onClick={this.blogSelector.bind(this, '2')}>
-            2: escape('DRM')
+            2: for each (<em>game</em> in <em>games</em>)
           </li>
           <li id='1' onClick={this.blogSelector.bind(this, '1')}>
-            1: let read = this.blog()
+            1: escape('DRM')
           </li>
-          <li>
-
-          </li>
-          <li>
-
-          </li>
-          <li>
-
+          <li id='0' onClick={this.blogSelector.bind(this, '0')}>
+            0: let read = this.blog()
           </li>
         </ul>
       </div>
