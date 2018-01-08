@@ -21,8 +21,8 @@ class Bio extends Component {
           <h4 id='bio-text'>
             front-end web developer specializing in Javascript,
             interesting aesthetics and creative solutions;
-            devoted to programming outside the box and passionate about
-            getting work done.
+            devoted to the endless journey of programming and
+            self-improvement.
           </h4>
         </div>
       )
@@ -31,8 +31,8 @@ class Bio extends Component {
       return (
         <div className='bio' onClick={this.bioToggle.bind(this)}>
           <h4 id='bio-text'>
-            also a Linux enthusiast, multi-instrumentalist and sound designer.
-            a self-motivated individual and useful teammate. a provider of
+            Linux enthusiast, multi-instrumentalist and sound designer.
+            a self-motivated individual and useful teammate; a provider of
             comic relief who knows timing is everything.
           </h4>
         </div>
