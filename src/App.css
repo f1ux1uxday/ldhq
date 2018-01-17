@@ -210,6 +210,10 @@ li {
   margin-top: 0%;
 }
 
+.blog-section-heading {
+  text-align: center;
+}
+
 .blog-link {
   color: #333;
 }

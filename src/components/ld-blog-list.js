@@ -10,6 +10,9 @@ class BlogList extends Component {
     return (
       <div className='blog-list'>
         <ul id='blog-list'>
+          <li id='3' onClick={this.blogSelector.bind(this, '3')}>
+            3: Reflect.get('freeCodeCamp review')
+          </li>
           <li id='2' onClick={this.blogSelector.bind(this, '2')}>
             2: for each (<em>game</em> in <em>games</em>)
           </li>

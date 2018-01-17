@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 import ReadThisBlog from './blogs/ld-readthisblog'
 import EscapeDRMBlog from './blogs/ld-escapeblog'
-import ForEachBlog from './blogs/ld-foreachblog.js'
+import ForEachBlog from './blogs/ld-foreachblog'
+import FreeCodeBlog from './blogs/ld-freecodecamp'
 
 // Keep: onClick={this.blogSelector('1')}
 class BlogDisplay extends Component {
@@ -20,6 +21,11 @@ class BlogDisplay extends Component {
     if (this.props.blog === '2') {
       return (
         <ForEachBlog />
+      )
+    }
+    if (this.props.blog === '3') {
+      return (
+        <FreeCodeBlog />
       )
     }
   }

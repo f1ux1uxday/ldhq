@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class freeCodeBlog extends Component {
+class FreeCodeBlog extends Component {
   render() {
     return (
       <div className='blog-entry'>
@@ -57,16 +57,18 @@ class freeCodeBlog extends Component {
           </p>
           <h5 className='blog-section-heading'>Basic Front End Development Projects</h5>
           <p>
-            After three sections of basic lessons, students are assigned two projects: a 
-            tribute page (link) and a personal portfolio. I decided to make my tribute page 
-            in honor of Shane MacGowan of the Pogues, in part to celebrate his new teeth 
-            (link) and partly in recognition of a life fully-lived. Making a portfolio page 
-            felt like a presumptive assignment at the time, when students had only completed 
-            a single project. I get that the idea is to populate the portfolio with future
-            projects as they are completed, but by that time the quality of work improves 
-            drastically, the portfolio itself pales in comparison and will need to be 
-            redone anyway. Alas, one sometimes does the assigned work and quickly 
-            forgets soon thereafter.             
+            After three sections of basic lessons, students are assigned two projects: a <a
+            href='https://codepen.io/f1ux1uxday/full/xgEgwr' clasName='blog-link'
+            target='blank'> tribute page</a> and a personal portfolio. I decided to make my 
+            tribute page in honor of Shane MacGowan of the Pogues, in part to celebrate his <a
+            href='https://www.mirror.co.uk/3am/celebrity-news/pogues-frontman-shane-macgowan-unveils-7040427'
+            className='blog-link' target='blank'>new teeth</a> and partly in recognition of a life 
+            fully-lived. Making a portfolio page felt like a presumptive assignment at the time, 
+            when students had only completed a single project. I get that the idea is to populate 
+            the portfolio with future projects as they are completed, but by that time the quality 
+            of work improves drastically, the portfolio itself pales in comparison and will need to 
+            be redone anyway. Alas, one sometimes does the assigned work and quickly forgets 
+            soon thereafter.             
           </p>
           <h5 className='blog-section-heading'>Basic Javascript</h5>
           <p>
@@ -76,9 +78,8 @@ class freeCodeBlog extends Component {
             Array Data with Indexes' (isn't that suppopsed to say indices?), 'Nesting For 
             Loops' and 'Sift Through Text with Regular Expressions'. A drop at a time, and
             often without the larger context required to truly comprehend an issue. The
-            human element, if you will. All the micro detail in the world is effectively
-            useless if it can't find it's place in the macro. What is offered here is
-            helpful, albeit limited.
+            human element. All the micro detail in the world is effectively useless if it 
+            can't find it's place in the macro. The offering here is helpful, albeit limited.
           </p>
           <h5 className='blog-section-heading'>Object-Oriented and Functional Programming'</h5>
           <p>
@@ -111,28 +112,33 @@ class freeCodeBlog extends Component {
             lessons earlier, I'm not sure if it better to introduce these topics through 
             jQuery rather than plain ol' Javascript. I assume that a programmer benefits 
             more from understanding the core of a language before turning to frameworks 
-            that abstract the core away, but like everything else I could be wrong about 
-            that.
+            which abstract that core away, but like everything else I could be wrong.
           </p>
           <h5 className='blog-section-heading'>Intermediate Front-End Projects</h5>
           <p>
-            So many hours into this thing and students are still told to be using CodePen 
-            (link) to develop their projects. CodePen describes itself as an "online 
-            community for testing and showcasing user-created HTML, CSS and JavaScript code 
-            snippets," which "functions as an online code editor and open-source learning 
-            environment, where developers can create code snippets... and test them." I 
-            like CodePen, don't get me wrong. But I also think using CodePen in lieu of a 
-            normal dev environment postpones the aqcuisition of fundamentals like hosting 
-            and SFTP. Every aspiring developer should purchase their own domain as a rite 
-            of passage. I have been hosting HTML/CSS websites for five plus years so I 
-            dropped CodePen like a dirty diaper when starting the intermediate projects.
+            So many hours into this thing and students are still told to be developing
+            their projects in <a href='https://codepen.io' className='blog-link' 
+            target='blank'>CodePen</a> to develop their projects. CodePen describes itself 
+            as an "online community for testing and showcasing user-created HTML, CSS and 
+            JavaScript code snippets," which "functions as an online code editor and 
+            open-source learning environment, where developers can create code snippets... 
+            and test them." I like CodePen, don't get me wrong. But I also think using 
+            CodePen in lieu of a normal dev environment postpones the aqcuisition of 
+            fundamentals like hosting and SFTP. Every aspiring developer should purchase 
+            their own domain as a rite of passage. I have been hosting HTML/CSS websites 
+            for five plus years so I dropped CodePen like a dirty diaper when starting the 
+            intermediate projects.
           </p>
           <p>
             Anyway, the student is assigned four intermediate projects: a random quote 
-            generator (which I turned into an insult generator (link)), a local weather 
-            app (link), a Wikipedia search interface (link), and a twitch.tv user list 
-            (link). These were reasonable assignments given where they fit into the larger 
-            curriculum. Fair enough.
+            generator (which I turned into an <a href='https://codepen.io/f1ux1uxday/full/PWabRN'
+            className='blog-link' target='blank'>insult generator</a>), a <a 
+            href='http://gilganesh.com/ACE/weather.html' className='blog-link' target='blank'>
+            local weather app</a>, a <a href='http://zenradsyndicate.com/wikisearch.html'
+            className='blog-link' target='blank'>Wikipedia search interface</a>, and a <a 
+            href='http://gilganesh.com/ACE/twitch.html' className='blog-link' target='blank'>
+            twitch.tv user list</a>. These were reasonable assignments given where they fit into 
+            the larger curriculum. Fair enough.
           </p>
           <h5 className='blog-section-heading'>Intermediate Algorithm Scripting</h5>
           <p>
@@ -170,12 +176,17 @@ class freeCodeBlog extends Component {
             having learned how to become unstuck results in less time spent stuck, which 
             results in fewer urges to hulk-smash a nearby object.
           </p>
-          <h5 className='body-section-heading'>Advanced Front-End Projects</h5>
+          <h5 className='blog-section-heading'>Advanced Front-End Projects</h5>
           <p>
             I have already written about the final two advanced projects, so I won't repeat
-            myself here. Before 'Tic Tac Torment' and 'Simon Joe, Memory Cat' I made a 
-            colorful calculator using jQuery (link). After that, I started experimenting with
-            the React framework and concocted a little tool I call the 'Hypno-Timer'(link).
+            myself here. Before <a href='http://tictactorment.herokuapp.com' target='blank'
+            className='blog-link'>Tic Tac Torment</a> and <a href='http://simon-joe.herokuapp.com'
+            className='blog-link' target='blank'>Simon Joe, Memory Cat</a> I made a 
+            colorful calculator using <a href='http://gilganesh.com/ACE/calc.html'
+            className='blog-link' target='blank'>jQuery</a>. After that, I started 
+            experimenting with the React framework and concocted a little tool I call the <a
+            href='http://hypno-timer.herokuapp.com' className='blog-link' target='blank'>
+            Hypno-Timer</a>.
           </p>
           <h5 className='blog-section-heading'>The Gestalt</h5>
           <p>
@@ -193,7 +204,7 @@ class freeCodeBlog extends Component {
           <p>
             The broader context and education that freeCodeCamp lacks is readily and freely 
             available across the web. For self-taught programmers there is no shortage of 
-            information but rather a dearth of meaningufl guidance. freeCodeCamp offers that 
+            information but rather a dearth of meaningful guidance. freeCodeCamp offers that 
             and a digital sandbox to flop around in, little else. And it works fairly well. 
             If one is willing to get stuck and build a knowledge base from sources found 
             elsewhere, freeCodeCamp can be a useful angle in an autodidactic approach. If one 
@@ -215,19 +226,39 @@ class freeCodeBlog extends Component {
             why can bear almost any how". If one is resolved toward a goal or purpose, one 
             becomes immersed and can traverse great distance by momentum alone.
           </p>
-          <p>
-            Here are a few sources of information I have found helpful.</br></br>
-            JSbooks</br>
-            Stack Overflow</br>
-            MDN</br>
-            Coding Train</br>
-            r/learnprogramming FAQ</br>
-            jonas magic resources</br>
-            Udemy Colt</br>
-            Udemy Workflow</br>
+          <p className='blog-section-heading'>
+            Here are a few sources of information I have found helpful.
+          </p>
+          <p className='blog-section-heading'>
+            <a href='http://stackoverflow.com'>
+              Stack Overflow
+            </a><br/>
+            <a href='https://jsbooks.revolunet.com/'>
+              JSbooks
+            </a><br/>
+            <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>
+              JavaScript Documentation at Mozilla Development Network
+            </a><br/>
+            <a href='https://www.reddit.com/r/learnprogramming/wiki/faq'>
+              Learn Programming FAQ
+            </a><br/>
+            <a href='https://www.youtube.com/user/shiffman'>
+              The Coding Train
+            </a><br/>
+            <a href='http://www.codingheroes.io/resources/'>
+              Jonas' Resources For Building Beautiful Websites
+            </a><br/>
+            <a href='https://www.udemy.com/the-web-developer-bootcamp/'>
+              The Web Developer Bootcamp by Colt Steele
+            </a><br/>
+            <a href='https://www.udemy.com/git-a-web-developer-job-mastering-the-modern-workflow/'>
+              Mastering the Modern Workflow
+            </a><br/>
           </p>
         </div>
       </div>
     )
   }
 }
+
+export default FreeCodeBlog
