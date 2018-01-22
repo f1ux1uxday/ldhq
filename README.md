@@ -1,3 +1,3 @@
-This is a developer's personal portfolio page, under construction.
+##### This is my development portfolio.
 
-Made with React.
+###### Hosted at lucasdayton.com
