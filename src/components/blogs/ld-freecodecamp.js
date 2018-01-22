@@ -58,8 +58,8 @@ class FreeCodeBlog extends Component {
           <h5 className='blog-section-heading'>Basic Front End Development Projects</h5>
           <p>
             After three sections of basic lessons, students are assigned two projects: a <a
-            href='https://codepen.io/f1ux1uxday/full/xgEgwr' clasName='blog-link'
-            target='blank'> tribute page</a> and a personal portfolio. I decided to make my
+            href='https://codepen.io/f1ux1uxday/full/xgEgwr' className='blog-link'
+            target='blank'> tribute page</a> and a personal portfolio. I decided to make my 
             tribute page in honor of Shane MacGowan of the Pogues, in part to celebrate his <a
             href='https://www.mirror.co.uk/3am/celebrity-news/pogues-frontman-shane-macgowan-unveils-7040427'
             className='blog-link' target='blank'>new teeth</a> and partly in recognition of a life
