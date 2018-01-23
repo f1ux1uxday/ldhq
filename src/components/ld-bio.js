@@ -35,7 +35,7 @@ class Bio extends Component {
         <div className='bio' onClick={this.bioToggle.bind(this)}>
           <h4 id='bio-text'>
             Linux enthusiast, multi-instrumentalist and sound designer.
-            a self-motivated individual and useful teammate; a provider of
+            a highly-motivated individual and useful teammate; a provider of
             comic relief who knows timing is everything.
           </h4>
         </div>
