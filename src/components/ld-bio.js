@@ -22,10 +22,9 @@ class Bio extends Component {
       return (
         <div className='bio' onClick={this.bioToggle.bind(this)}>
           <h4 id='bio-text'>
-            front-end web developer specializing in Javascript,
-            interesting aesthetics and creative solutions;
-            devoted to the endless journey of programming and
-            self-improvement.
+            JavaScript developer specializing in interesting
+            aesthetics and creative solutions; devoted to the endless
+            journey of self-improvement.
           </h4>
         </div>
       )
@@ -34,8 +33,8 @@ class Bio extends Component {
       return (
         <div className='bio' onClick={this.bioToggle.bind(this)}>
           <h4 id='bio-text'>
-            Linux enthusiast, multi-instrumentalist and sound designer.
-            a highly-motivated individual and useful teammate; a provider of
+            Linux enthusiast, musician and sound designer.
+            a motivated individual and teammate; a provider of
             comic relief who knows timing is everything.
           </h4>
         </div>
@@ -46,8 +45,8 @@ class Bio extends Component {
         <div className='bio' onClick={this.bioToggle.bind(this)}>
           <h4 id='bio-text'>
             memetic practitioner, Socratic enquirer and student
-            of many disciplines; a pragmatic realist ready, willing
-            and able to manifest positive contributions.
+            of many disciplines; a pragmatic realist ready and able
+            to manifest positive contributions.
           </h4>
         </div>
       )
