@@ -6,6 +6,9 @@ class Bio extends Component {
       this.props.changeBio('b')
     }
     if (this.props.bio === 'b') {
+      this.props.changeBio('c')
+    }
+    if (this.props.bio === 'c') {
       this.props.changeBio('a')
     }
     console.log(this.props.bio)
@@ -34,6 +37,17 @@ class Bio extends Component {
             Linux enthusiast, multi-instrumentalist and sound designer.
             a self-motivated individual and useful teammate; a provider of
             comic relief who knows timing is everything.
+          </h4>
+        </div>
+      )
+    }
+    if (this.props.bio === 'c') {
+      return (
+        <div className='bio' onClick={this.bioToggle.bind(this)}>
+          <h4 id='bio-text'>
+            memetic practitioner, Socratic enquirer and student
+            of many disciplines; a pragmatic realist ready, willing
+            and able to manifest positive contributions.
           </h4>
         </div>
       )
