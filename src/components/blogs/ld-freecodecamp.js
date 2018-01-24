@@ -153,7 +153,7 @@ class FreeCodeBlog extends Component {
             string into pig latin, write a search and replace function, sum all odd
             fibonacci numbers, convert arabic numerals into roman numberals, and translate
             binary strings into English. Some of these challenges caused heaps of frustration
-            that could only be dispelled by going v e r y s l o w l y, breaking the problem
+            that could only be dispelled by going very s l o w l y, breaking the problem
             into the smallest pieces possible and taking them one at a time. I had to develop
             a process for getting unstuck, and that process has aided me in every subsequent
             endeavor.
