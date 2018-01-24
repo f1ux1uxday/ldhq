@@ -192,8 +192,9 @@ class FreeCodeBlog extends Component {
             className='blog-link' target='blank'>jQuery</a>. After that, I started
             experimenting with the React framework and concocted a little tool I call the <a
             href='http://hypno-timer.herokuapp.com' className='blog-link' target='blank'>
-            Hypno-Timer</a>. React is really awesome! It changed the way I think about
-            front-end development. Learn React.
+            Hypno-Timer</a>. React is awesome! Conditional rendering allows for speedy and 
+            efficient web applications, reducing unnecessary computation to maximize
+            available resources. Learn React.
           </p>
           <h5 className='blog-section-heading'>The Gestalt</h5>
           <p>
