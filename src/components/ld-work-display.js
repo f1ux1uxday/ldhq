@@ -40,7 +40,7 @@ class WorkDisplay extends Component {
 
         return (
             <p className='proj-desc'>{text}</p>
-        )
+        );
     }
 
     render() {
