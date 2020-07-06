@@ -4,52 +4,54 @@ import Header from '../components/ld-header'
 import '../App.css'
 
 class ProjectView extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      work: 'on',
-      descript: '0',
-      contact: 'off',
-      blog: 'off',
-      bio: 'a',
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            work: 'on',
+            descript: '0',
+            contact: 'off',
+            blog: 'off',
+            bio: 'a',
+        }
+
+        this.getDescription = this.getDescription.bind(this)
+        this.getInitialState = this.getInitialState.bind(this)
     }
-    this.getDescription = this.getDescription.bind(this)
-    this.getInitialState = this.getInitialState.bind(this)
-  }
 
-  getInitialState() {
-    this.setState({
-      work: 'off',
-      contact: 'off',
-      blog: 'off',
-      bio: 'a',
-    })
-  }
+    getInitialState() {
+        this.setState({
+            work: 'off',
+            contact: 'off',
+            blog: 'off',
+            bio: 'a',
+        })
+    }
 
-  getDescription(projectNum) {
-    this.setState({
-      descript: projectNum,
-    })
-  }
+    getDescription(projectNum) {
+        this.setState({
+            descript: projectNum,
+        })
+    }
 
-  render() {
-    return (
-      <div className='App container'>
-        <Header
-          getInitialState={this.getInitialState}
-        />
+    render() {
+        return (
+            <div className='App container'>
+                <Header
+                    getInitialState={this.getInitialState}
+                />
 
-        <Work
-          blog={this.state.blog}
-          changeWork={this.changeWork}
-          descript={this.state.descript}
-          getDescription={this.getDescription}
-          work={this.state.work}
-        />
+                <Work
+                    blog={this.state.blog}
+                    changeWork={this.changeWork}
+                    descript={this.state.descript}
+                    getDescription={this.getDescription}
+                    work={this.state.work}
+                />
 
-      </div>
-    )
-  }
+            </div>
+        )
+    }
 }
 
 export default ProjectView

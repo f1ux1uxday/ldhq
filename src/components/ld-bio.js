@@ -44,9 +44,8 @@ class Bio extends Component {
       return (
         <div className='bio' onClick={this.bioToggle.bind(this)}>
           <h4 id='bio-text'>
-            memetic practitioner, Socratic enquirer and student
-            of many disciplines; a pragmatic realist ready and able
-            to manifest positive contributions.
+            Socratic enquirer and student of many disciplines;
+            pragmatic realist and a generally solid person.
           </h4>
         </div>
       )
