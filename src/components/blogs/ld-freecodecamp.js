@@ -5,7 +5,7 @@ class FreeCodeBlog extends Component {
         return (
             <div className='blog-entry'>
                 <h4 className='blog-title'>
-                    3: reflect.get('experience with freeCodeCamp')
+                    3: reflect.get(experience)
                 </h4>
                 <div className='blog-body'>
                     <p>
@@ -58,11 +58,11 @@ class FreeCodeBlog extends Component {
                     <h5 className='blog-section-heading'>Basic Front End Development Projects</h5>
                     <p>
                       After three sections of basic lessons, students are assigned two projects: a <a
-                      href='https://codepen.io/f1ux1uxday/full/xgEgwr' className='blog-link'
+                      href='https://codepen.io/f1ux1uxday/full/xgEgwr' className='blog-body-link'
                       target='blank'> tribute page</a> and a personal portfolio. I decided to make my 
                       tribute page in honor of Shane MacGowan of the Pogues, in part to celebrate his <a
                       href='https://www.mirror.co.uk/3am/celebrity-news/pogues-frontman-shane-macgowan-unveils-7040427'
-                      className='blog-link' target='blank'>new teeth</a> and partly in recognition of a life
+                      className='blog-body-link' target='blank'>new teeth</a> and partly in recognition of a life
                       fully-lived. Making a portfolio page felt like a presumptive assignment at the time,
                       when students had only completed a single project. I get that the idea is to populate
                       the portfolio with future projects as they are completed, but by that time the quality
@@ -122,7 +122,7 @@ class FreeCodeBlog extends Component {
                     <h5 className='blog-section-heading'>Intermediate Front-End Projects</h5>
                     <p>
                       So many hours into this venture and students are still told to be developing
-                      their projects in <a href='https://codepen.io' className='blog-link'
+                      their projects in <a href='https://codepen.io' className='blog-body-link'
                       target='blank'>CodePen</a>. CodePen describes itself as an "online community
                       for testing and showcasing user-created HTML, CSS and JavaScript code
                       snippets," which "functions as an online code editor and open-source learning
@@ -135,12 +135,12 @@ class FreeCodeBlog extends Component {
                     </p>
                     <p>
                       The student is asked to make a random quote generator (which I turned
-                      into an <a href='https://codepen.io/f1ux1uxday/full/PWabRN' className='blog-link'
+                      into an <a href='https://codepen.io/f1ux1uxday/full/PWabRN' className='blog-body-link'
                       target='blank'>insult generator</a>), a <a href='http://gilganesh.com/ACE/weather.html'
-                      className='blog-link' target='blank'> local weather app</a>, a <a
-                      href='http://gilganesh.com/ACE/wikisearch.html' className='blog-link' target='blank'>
+                      className='blog-body-link' target='blank'> local weather app</a>, a <a
+                      href='http://gilganesh.com/ACE/wikisearch.html' className='blog-body-link' target='blank'>
                       Wikipedia search interface</a>, and a <a href='http://gilganesh.com/ACE/twitch.html'
-                      className='blog-link' target='blank'> twitch.tv user list</a>. These were reasonable
+                      className='blog-body-link' target='blank'> twitch.tv user list</a>. These were reasonable
                       assignments given where they fit into the larger curriculum. Fair enough. I most
                       enjoyed making the Wikipedia search interface and occasionally type random words into
                       it for fun.
@@ -186,12 +186,12 @@ class FreeCodeBlog extends Component {
                     <p>
                       I have already written about the final two advanced projects, so I won't repeat
                       myself here. Before <a href='http://tictactorment.herokuapp.com' target='blank'
-                      className='blog-link'>Tic Tac Torment</a> and <a href='http://simon-joe.herokuapp.com'
-                      className='blog-link' target='blank'>Simon Joe, Memory Cat</a> I made a
+                      className='blog-body-link'>Tic Tac Torment</a> and <a href='http://simon-joe.herokuapp.com'
+                      className='blog-body-link' target='blank'>Simon Joe, Memory Cat</a> I made a
                       colorful calculator using <a href='http://gilganesh.com/ACE/calc.html'
-                      className='blog-link' target='blank'>jQuery</a>. After that, I started
+                      className='blog-body-link' target='blank'>jQuery</a>. After that, I started
                       experimenting with the React framework and concocted a little tool I call the <a
-                      href='http://hypno-timer.herokuapp.com' className='blog-link' target='blank'>
+                      href='http://hypno-timer.herokuapp.com' className='blog-body-link' target='blank'>
                       Hypno-Timer</a>. React is awesome! Conditional rendering allows for speedy and 
                       efficient web applications, reducing unnecessary computation to maximize
                       available resources. Learn React.
@@ -239,35 +239,51 @@ class FreeCodeBlog extends Component {
                       Here are a few sources of information I have found helpful.
                     </p>
                     <p className='blog-section-heading'>
-                        <a href='http://stackoverflow.com'>
-                          Stack Overflow
+                        <a className='blog-body-link'
+                            href='http://stackoverflow.com'
+                        >
+                            Stack Overflow
                         </a><br/>
-                        <a href='https://jsbooks.revolunet.com/'>
-                          JSbooks
+                        <a className='blog-body-link'
+                            href='https://jsbooks.revolunet.com/'
+                        >
+                            JSbooks
                         </a><br/>
-                        <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>
-                          JavaScript Documentation at Mozilla Development Network
+                        <a className='blog-body-link'
+                            href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+                        >
+                            JavaScript Documentation at Mozilla Development Network
                         </a><br/>
-                        <a href='https://www.reddit.com/r/learnprogramming/wiki/faq'>
-                          Learn Programming FAQ
+                        <a className='blog-body-link'
+                            href='https://www.reddit.com/r/learnprogramming/wiki/faq'
+                        >
+                            Learn Programming FAQ
                         </a><br/>
-                        <a href='https://www.youtube.com/user/shiffman'>
-                          The Coding Train
+                        <a className='blog-body-link'
+                            href='https://www.youtube.com/user/shiffman'
+                        >
+                            The Coding Train
                         </a><br/>
-                        <a href='http://www.codingheroes.io/resources/'>
-                          Jonas' Resources For Building Beautiful Websites
+                        <a className='blog-body-link'
+                            href='http://www.codingheroes.io/resources/'
+                        >
+                            Jonas' Resources For Building Beautiful Websites
                         </a><br/>
-                        <a href='https://www.udemy.com/the-web-developer-bootcamp/'>
-                          The Web Developer Bootcamp by Colt Steele
+                        <a className='blog-body-link'
+                            href='https://www.udemy.com/the-web-developer-bootcamp/'
+                        >
+                            The Web Developer Bootcamp by Colt Steele
                         </a><br/>
-                        <a href='https://www.udemy.com/git-a-web-developer-job-mastering-the-modern-workflow/'>
-                          Mastering the Modern Workflow
+                        <a className='blog-body-link'
+                            href='https://www.udemy.com/git-a-web-developer-job-mastering-the-modern-workflow/'
+                        >
+                            Mastering the Modern Workflow
                         </a><br/>
                     </p>
-        </div>
-      </div>
-    )
-  }
+                </div>
+            </div>
+        )
+    }
 }
 
 export default FreeCodeBlog

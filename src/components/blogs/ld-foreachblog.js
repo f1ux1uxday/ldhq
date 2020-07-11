@@ -5,20 +5,20 @@ class ForEachBlog extends Component {
         return (
             <div className='blog-entry'>
                 <h4 className='blog-title'>
-                    2: for each (<em>game</em> in <em>games</em>)
+                    2: games.forEach(game =&gt; play())
                 </h4>
                 <div className='blog-body'>
                     <p> For the last couple months, I have been working on two game projects:
                         Tictactorment, a mutated version of Tic-Tac-Toe, and Simon Joe
                         Memory Cat, a clone of the classic memory game, Simon. They can be found
                         in the projects section of this site,&nbsp;
-                        <a 
-                            href='http://lucasdayton.com/projects'
-                            className='blog-link'
-                            target='blank'
-                        >
+                    <a 
+                        href='http://lucasdayton.com/projects'
+                        className='blog-body-link'
+                        target='blank'
+                    >
                             here
-                        </a>
+                    </a>
                         .
                     </p>
                     <p> Making Tictactorment, I decided early on to use a 4x4 grid instead of
@@ -92,7 +92,7 @@ class ForEachBlog extends Component {
                         <a
                             href='https://www.eff.org/deeplinks/2017/10/drms-dead-canary-how-we-just-lost-web-what-we-learned-it-and-what-we-need-do-next'
                             target='blank'
-                            className='blog-link'
+                            className='blog-body-link'
                         >
                           DRM's Dead Canary: How We Just Lost the Web, What We Learned From It,
                           and What We Need to Do Next

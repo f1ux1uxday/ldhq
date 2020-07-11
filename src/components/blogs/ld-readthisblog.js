@@ -5,7 +5,9 @@ class ReadThisBlog extends Component {
     render() {
         return (
             <div className='blog-entry'>
-                <h4 className='blog-title'> let read = this.blog()</h4>
+                <h4 className='blog-title'>
+                    fs.readFile('thisBlog', 'utf8')
+                </h4>
                 <div className='blog-body'>
                     <p> This will be a modest blog for discussing various developments in
                         the technosphere. To keep pace with the rate of change in today's
