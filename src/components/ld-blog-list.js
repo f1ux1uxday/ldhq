@@ -1,27 +1,31 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-// Use: onClick={this.blogSelector('1')}
 class BlogList extends Component {
-    blogSelector(blogID) {
-        this.props.selectBlog(blogID)
-    }
 
     render() {
         return (
-            <div className='blog-list'>
-                <ul id='blog-list'>
-                    <li id='3' onClick={this.blogSelector.bind(this, '3')}>
-                        3: Reflect.get('freeCodeCamp review')
+            <div className='blog-list-block'>
+                <ul className='blog-list'>
+                    <li className='blog-list-link' id='3'>
+                        <Link to='/blog/3'>
+                            3: reflect.get(experience)
+                        </Link>
                     </li>
-                    <li id='2' onClick={this.blogSelector.bind(this, '2')}>
-                        2: for each (<em>game</em> in <em>games</em>)
+                    <li className='blog-list-link' id='2'>
+                        <Link to='/blog/2'>
+                            2: games.forEach(game =&gt; play())
+                        </Link>
                     </li>
-                    <li id='1' onClick={this.blogSelector.bind(this, '1')}>
-                        1: escape('DRM')
+                    <li className='blog-list-link' id='1'>
+                        <Link to='/blog/1'>
+                            1: escape('DRM')
+                        </Link>
                     </li>
-                    <li id='0' onClick={this.blogSelector.bind(this, '0')}>
-                        0: let read = this.blog()
+                    <li className='blog-list-link' id='0'>
+                        <Link to='/blog/0'>
+                            0: fs.readFile('thisBlog', 'utf8')
+                        </Link>
                     </li>
                 </ul>
             </div>
