@@ -1,0 +1,30 @@
+@import 'styles/colors.scss';
+@import 'styles/header.scss';
+@import 'styles/bio.scss';
+@import 'styles/blog.scss';
+@import 'styles/work.scss';
+@import 'styles/contact.scss';
+
+html {
+    height: 100%;
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Share Tech Mono', monospace;
+        height: 100%;
+    }
+
+    #root {
+        #layout {
+            .App {
+                text-align: center;
+                user-select: none;
+
+                li:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

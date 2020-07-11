@@ -1,0 +1,225 @@
+.blog-link {
+    align-items: center;
+    background-color: $bg-quite-light;
+    color: $fg-quite-dark;
+    display: flex;
+    font-size: 2.25rem;
+    height: 20%;
+    justify-content: center;
+    position: fixed;
+    top: 60%;
+    transition-property: all;
+    transition-duration: 1s;
+    width: 100%;
+
+    &:hover {
+        letter-spacing: .33rem;
+    }
+
+    #blog-head-text {
+      font-size: 2.25rem;
+    }
+}
+
+.blog {
+    .blog-index {
+        align-items: center;
+        background-color: $bg-quite-light;
+        color: $fg-quite-dark;
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        height: 80%;
+        justify-content: flex-start;
+        position: fixed;
+        top: 20%;
+        width: 100%;
+
+        #blog-head-index {
+            font-size: 1.5rem;
+        }
+
+        .blog-list-block {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 80%;
+
+            .blog-list {
+                list-style-type: none;
+                margin-block-start: unset;
+                padding-inline-start: unset;
+                text-align: left;
+
+                .blog-list-link a {
+                    color: $bg-very-dark;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+
+.blog-display {
+    align-items: flex-start;
+    background-color: $bg-quite-light;
+    color: $fg-quite-dark;
+    display: flex;
+    font-size: 1rem;
+    height: 80%;
+    justify-content: flex-start;
+    position: fixed;
+    top: 20%;
+    width: 100%;
+
+    .blog-entry {
+        background-color: $bg-quite-light;
+        color: $fg-quite-dark;
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        position: fixed;
+        height: 80%;
+        overflow: auto;
+        width: 100%;
+
+        .blog-title {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .blog-body {
+            margin: auto;
+            margin-top: 0%;
+            text-align: left;
+            width: 80%;
+
+            .blog-section-heading {
+                text-align: center;
+            }
+
+            .blog-body-link {
+              color: $bg-very-dark;
+            }
+        }
+    }
+}
+
+@media (min-width : 320px)
+and (max-width : 732px)
+and (orientation : landscape) {
+    .blog {
+        .blog-index {
+            display: flex;
+            font-size: .75rem;
+
+            #blog-head-index {
+                font-size: 1.25rem;
+                margin-bottom: 0%;
+            }
+
+            .blog-list-block {
+                .blog-list {
+                    align-items: flex-start;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: .75rem;
+                    justify-content: center;
+                    margin-top: 1rem;
+                    width: auto;
+
+                    .blog-list-link {
+                        margin: .1rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:733px)
+and (max-width:832px) {
+    .blog {
+        .blog-index {
+            #blog-head-index {
+                font-size: 1.5rem;
+                margin-top: 2%;
+                margin-bottom: 1%;
+
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    .blog {
+        .blog-index {
+            .blog-list-block {
+                .blog-list {
+                    font-size: .88rem;
+                }
+            }
+        }
+    }
+
+    .blog-display {
+        .blog-entry {
+            .blog-body {
+                font-size: .88rem;
+            }
+        }
+    }
+}
+
+@media (min-width : 768px)
+and (orientation : portrait) {
+    .blog {
+        .blog-index {
+            #blog-head-index {
+                font-size: 2.5rem;
+                margin-bottom: 2%;
+            }
+
+            .blog-list-block {
+                .blog-list {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .blog-display {
+        .blog-entry {
+            .blog-title {
+                font-size: 2rem;
+            }
+
+            .blog-body {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+
+@media (min-width : 1024px)
+and (orientation : portrait) {
+    .blog {
+        .blog-index {
+            #blog-head-index {
+                font-size: 2.75rem;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    .blog-display {
+        .blog-entry {
+            .blog-body {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
