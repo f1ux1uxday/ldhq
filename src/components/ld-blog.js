@@ -1,59 +1,45 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import BlogList from './ld-blog-list'
-import BlogDisplay from './ld-blog-display'
+import ReadThisBlog from './blogs/ld-readthisblog'
+import EscapeDRMBlog from './blogs/ld-escapeblog'
+import ForEachBlog from './blogs/ld-foreachblog'
+import FreeCodeBlog from './blogs/ld-freecodecamp'
 
 class Blog extends Component {
-    blogToggle() {
-        if (this.props.blog === 'off') {
-            this.props.changeToBlogIndex()
-        }
-    }
-
-    stateCheckBlog() {
-        if (this.props.blog === 'off' && this.props.work === 'off') {
-            return (
-                <Link to='/blog'>
-                    <div className='blog-head' onClick={this.blogToggle.bind(this)}>
-                        <h4 id='blog-head-text'>
-                            BLOG
-                        </h4>
-                    </div>
-                </Link>
-            )
-        }
-        if (this.props.blog === 'index') {
-            return (
-                <div className='blog-index'>
-                    <h4 id='blog-head-index'>
-                        BLOG
-                    </h4>
-                    <BlogList
-                        blog={this.props.blog}
-                        selectBlog={this.props.selectBlog}
-                    />
-                </div>
-            )
-        }
-        if (this.props.blog === '0' ||
-            this.props.blog === '1' ||
-            this.props.blog === '2' ||
-            this.props.blog === '3'  
-        ) {
-            return (
-                <BlogDisplay
-                    blog={this.props.blog}
-                />
-            )
-        }
-    }
-
     render() {
         return (
-            <div>
-                {this.stateCheckBlog()}
-            </div>
+            <Switch>
+                <Route exact path='/blog'>
+                    <div className='blog'>
+                        <div className='blog-index'>
+                            <h4 id='blog-head-index'>BLOG</h4>
+                            <BlogList />
+                        </div>
+                    </div>
+                </Route>
+                <Route path='/blog/0'>
+                    <div className='blog-display'>
+                        <ReadThisBlog />
+                    </div>
+                </Route>
+                <Route path='/blog/1'>
+                    <div className='blog-display'>
+                        <EscapeDRMBlog />
+                    </div>
+                </Route>
+                <Route path='/blog/2'>
+                    <div className='blog-display'>
+                        <ForEachBlog />
+                    </div>
+                </Route>
+                <Route path='/blog/3'>
+                    <div className='blog-display'>
+                        <FreeCodeBlog />
+                    </div>
+                </Route>
+            </Switch>
         )
     }
 }
